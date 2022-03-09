@@ -1,8 +1,8 @@
 # med-guide-record
-**A new app that acts as a search engine for locating Optum Specialty Pharmacy medications and instructions for call handling
-This app serves as the capstone project for the Front End Web Development 2: JavaScript course.
+**Med Guide Record (2.0) is new app that acts as a search engine for locating Optum Specialty Pharmacy medications and instructions for call handling
+This app serves as the capstone project for the Front End Web Development 2: JavaScript course.**
 
-#BACKGROUND
+##BACKGROUND
 
 The idea for the project came about as an idea for a solution to routine issues encountered in accessing the current Med Guide Record that is generated through the Macro Express Pro macro. Enumerated below are the two main issues we routinely encounter in using the current tool for accessing the Med Guide Record, along with an explanation of how these issues impact workflow:
 
@@ -15,7 +15,7 @@ The idea for the project came about as an idea for a solution to routine issues 
 - The same macro is used to look up medication allergies inside the IRIS SP Info portal, and the same problem of inability to generate information in a timely manner is encountered therein. 
 - Team members on our team (Multiple Sclerosis Therapy Solutions) routinely use team chat to ask if someone can check on which department handles a particular drug (in order to properly re-route a misrouted call). Everyone is supposed to have access to this information, but because the macro is unreliable, many team members oftentimes have to rely on others whose macro may be working. 
 
-#TECHNICAL DETAILS
+##TECHNICAL DETAILS
 
 Med Guide Record as a capstone project for the Front End Web Development 2: JavaScript course fulfills the following technical requirements:
 
