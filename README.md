@@ -1,6 +1,6 @@
 # med-guide-record
-**Med Guide Record (2.0) is new app that acts as a search engine for locating Optum Specialty Pharmacy medications and instructions for call handling
-This app serves as the capstone project for the Front End Web Development 2: JavaScript course.**
+**Med Guide Record (2.0) is new app that acts as a search engine for locating Optum Specialty Pharmacy medications and instructions for call handling. 
+This app serves as the capstone project for the Code Louisville Front End Web Development 2: JavaScript course.**
 
 ##BACKGROUND
 
