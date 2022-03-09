@@ -24,8 +24,8 @@ Med Guide Record as a capstone project for the Front End Web Development 2: Java
  - media queries
  - CSS Flexbox
 - [ ] uploaded to GitHub repo with a minimum of five (5) unique commits
-- [ ] contains a .README file
-- [ ] reads nd parses an external file into my app and displays data in my app from the external (.txt) file
+- [x] contains a .README file
+- [ ] reads and parses an external file into my app and displays data in my app from the external (.txt) file
 - [ ] contains a form with a submit button that saves input to an external file (and shows where the info is stored)
 - [ ] contains an array, dictionary or list that is populated with multiple values, retrieves at least one value and displays it in the application
 - [ ] implements a log that records invalid inputs and writes them to a text file  
