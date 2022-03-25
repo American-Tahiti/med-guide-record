@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    -webkit-box-sizing: border-box;
+    background: #eebbaa;
+    background-image: url("./images/lottadrugs.jpg");
+}
+header {
+    align-items: flex-end;
+
+}
+
+
+/* Responsive design */
+
+@media screen and (min-width: 765px) {
+    header h1 {
+        font-size: 65px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .search input:focus {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 35px;
+    }
+}
