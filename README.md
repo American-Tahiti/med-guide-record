@@ -1,10 +1,13 @@
 # med-guide-record
-**Med Guide Record (2.0) is new app that acts as a search engine for locating Optum Specialty Pharmacy medications and instructions for call handling. 
+**Med Guide Record (2.0) is new app that acts as a search engine for locating Optum Specialty Pharmacy medication specs and instructions for call routing and handling. 
 This app serves as the capstone project for the Code Louisville Front End Web Development 2: JavaScript course.**
 
 ##BACKGROUND
 
-The idea for the project came about as an idea for a solution to routine issues encountered in accessing the current Med Guide Record that is generated through the Macro Express Pro macro. Enumerated below are the two main issues we routinely encounter in using the current tool for accessing the Med Guide Record, along with an explanation of how these issues impact workflow:
+The idea for the project came about as an idea for a solution to routine issues encountered in accessing the current Med Guide Record that is generated through the Macro Express Pro macro. 
+![alt text](https://github.com/American-Tahiti/med-guide-record/MacroExpress.png?raw=true)
+
+Enumerated below are the two main issues we routinely encounter in using the current tool for accessing the Med Guide Record, along with an explanation of how these issues impact workflow:
 
 1. Offshore Patient Care Coordinators (PCCs) somehow have a different (outdated) version of the Med Guide Record. 
 - Because Offshore PCCs are using an older version, their handling of calls for Rx refill requests is frequently incorrect for certain medications. 
