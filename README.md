@@ -6,7 +6,7 @@ This app serves as the capstone project for the Code Louisville Front End Web De
 
 ##BACKGROUND
 
-This project was conceived as a potential solution to routine issues encountered in accessing the current Med Guide Record that is generated through the Macro Express Pro macro.
+This project was conceived as a potential solution to routine issues encountered in accessing the current Med Guide Record that is generated through the Macro Express Pro macro:
 
 ![alt text](https://github.com/American-Tahiti/med-guide-record/blob/main/MacroExpress.PNG)
 
