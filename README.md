@@ -8,7 +8,7 @@ This app serves as the capstone project for the Code Louisville Front End Web De
 
 This project was conceived as a potential solution to routine issues encountered in accessing the current Med Guide Record that is generated through the Macro Express Pro macro.
 
-![alt text](https://github.com/American-Tahiti/med-guide-record/MacroExpress.png?raw=true)
+![alt text](https://github.com/American-Tahiti/med-guide-record/blob/main/MacroExpress.PNG)
 
 .Enumerated below are the two main issues we routinely encounter in using the current tool for accessing the Med Guide Record, along with an explanation of how these issues impact workflow:
 
