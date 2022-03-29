@@ -1,3 +1,5 @@
+`use strict`;
+
 /* element selector */
 const inputDrug = document.querySelector(#'drug');
 const btnSearch = document.querySelector('#btn-search');
@@ -12,6 +14,10 @@ else {
     inputDrug(url);
 }
 }
+
+/* error tracking */
+TrackJS.track('Testing TrackJS!');
+                        
 
 /* fetch */
 function drug(url){
@@ -54,7 +60,7 @@ if (this.readyState == 4)
 
 xhrDoc.send() //sending the request
 
- 
+
  
 
 /* Contains an array, dictionary or list that is populated with multiple values, retrieves at least one value and displays it in the application */
