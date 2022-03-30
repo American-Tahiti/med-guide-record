@@ -1,7 +1,7 @@
 `use strict`;
 
 /* element selector */
-const inputDrug = document.querySelector(#'drug');
+const inputDrug = document.querySelector('#drug');
 const btnSearch = document.querySelector('#btn-search');
 
 /* input validation and error report */
@@ -53,7 +53,7 @@ if (this.readyState == 4)
 {
     if (this.status == 200)
    {
-    var data= this.response; //A string of the text data
+  //  var data= this.response; //A string of the text data
    }
 }         
 }         

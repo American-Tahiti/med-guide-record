@@ -1,0 +1,4 @@
+   window.TrackJS && TrackJS.install({ 
+            token: "5aafa51e543e4c54901b911e60dbdf10"
+            // for more configuration options, see https://docs.trackjs.com
+          });

@@ -11,7 +11,17 @@
     /* background: #eebbaa; */
     /* background: #424242; */
 }
-div {
+body {
+    background: #f55858
+}
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+    top: 0;
+    padding: 0 20px 0 20px;
+    position: relative;
     padding: 10px;
     background-color: #ce7e00;
     overflow: hidden;
@@ -36,7 +46,7 @@ header {
     text-align: center;
     }
 
-    .hero {
+    section.hero {
         background:#ffffff;
         width: 100vw;
     }
@@ -48,16 +58,9 @@ header {
         left: 90%;
         flex-direction: column;
     }
-    .logo {
+    section.logo {
         display: flex;
         flex-direction: column;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin: 0 auto;
-        padding: 0 20px 0 20px;
     }
     h1 {
         background: linear-gradient(rgba(3, 100, 120, 0.687), rgb(5, 34, 57));
@@ -81,6 +84,7 @@ header {
     .suggestion {
         font-weight: bold;
         font-size: 42px;
+        position: absolute;
     }
     footer {
         top: 85%;
