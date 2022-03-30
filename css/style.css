@@ -18,11 +18,10 @@ div.container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 auto;
+    margin: 25 0 auto;
     top: 0;
     padding: 0 20px 0 20px;
     position: relative;
-    padding: 10px;
     background-color: #ce7e00;
     overflow: hidden;
 }
@@ -49,6 +48,7 @@ header {
     section.hero {
         background:#ffffff;
         width: 100vw;
+        margin-bottom: 300px;
     }
     #hero {
         width: 100vw;
