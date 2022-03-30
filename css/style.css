@@ -12,7 +12,7 @@
     /* background: #424242; */
 }
 body {
-    background: #f55858
+    background: #f55858;
 }
 div.container {
     display: flex;
@@ -48,7 +48,7 @@ header {
     section.hero {
         background:#ffffff;
         width: 100vw;
-        margin-bottom: 300px;
+        margin-bottom: 25%;
     }
     #hero {
         width: 100vw;
@@ -71,6 +71,8 @@ header {
     }
     h2 {
         font-style: italic;
+        margin: 0;
+        padding: 0;
     }
     .comments {
         background: orange;
@@ -93,26 +95,19 @@ header {
 
 /* Responsive web design */
 
-@media screen and (min-width: 765px) {
-    header h1 {
-        font-size: 65px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .search input:focus {
-        width: 150px;
-    }
-}
+
+/* Mobile devices */
+
 @media screen and (max-width: 375px) {
     h1 {
         font-size: 35px;
     }
+    .search input:focus {
+        width: 150px;
+    }
 }
-
-/* Mobile devices */
-
+}
 @media screen and (max-width: 480px) {
-
 .btn {
 display: block;
 font-size: 18px;
@@ -173,7 +168,11 @@ background: #aaaaaa;
 footer {
 padding: 30px 0 10px 0;
 }           
-
+@media screen and (min-width: 765px) {
+    header h1 {
+        font-size: 65px;
+    }
+}
 /* Common desktop screen resolution */
 
 @media screen and (max-width: 1080px) {
