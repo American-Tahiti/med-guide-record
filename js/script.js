@@ -55,28 +55,51 @@ if (this.readyState == 4)
    {
     var data= this.response; //A string of the text data
    }
-}                  
-}
-
+}         
+}         
 xhrDoc.send() //sending the request
 
+/* Parse .csv file */
+import { createReadStream } from 'fs'; 
+import parse from 'csv-parse'; 
+import "should";
 
+//var myReadStream = createReadStream('../in/*.csv');
+var myReadStream = createReadStream('medguide.csv', { start: 100, end: 5999 });
+
+
+var parser = parse({delimiter: ':'});
+
+parser.write(myReadStream);
+
+parser.on('error', function(err){
+  console.log(err.message);
+});
+
+parser.on('finish', function(){
+  output.should.eql([/*arrays from file*/]);
+});
  
 
 /* Contains an array, dictionary or list that is populated with multiple values, retrieves at least one value and displays it in the application */
 
 let currentDate = new Date();
-let time = currentDate.getHours() + ":" + currentDate.getMinutes();
+let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
 console.log(time);
 
-
-let array = currentTime;
-
-currentTime[AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY];
-
-
- 
- 
+function calcTime(city, offset) {
+    var d = new Date()
+    var utc = d.getTime()+(d.getTimezoneOffset() * 60000);
+    var nd = new Date (utc + (3600000*offset));
+    return "The local time of the " + city + " time zone is" + nd.toLocaleString();
+}
+console.log(calcTime('eastern', '-4'))
+console.log(calcTime('central', '-5'))
+console.log(calcTime('pacific', '-7'))
+console.log(calcTime('mountain standard', '-7'))
+console.log(calcTime('mountain daylight', '-6'))
+console.log(calcTime('Alaska', '-8'))
+console.log(calcTime('Hawaii', '-10'))
 
 /*  Contains a form with a submit button that saves input to an external file (and shows where the info is stored) */
 
