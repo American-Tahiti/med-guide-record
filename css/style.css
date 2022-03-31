@@ -1,66 +1,40 @@
-* {
+:root {
+    background-color: #f55858;
+    width: 100%;
+    height: 100%;
+}
+body {
     display: flex;
+    flex-direction: column;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    overflow: hidden;
-    margin: 10px;
-    padding: 20px;
     font-family: 'Nosifer', 'Open Sans','Helvetica Neue', Helvetica, sans-serif;
     line-height: 1.45;
-    background: #f6b26b;
+    /* background: #f6b26b; */
     /* background: #eebbaa; */
     /* background: #424242; */
 }
-body {
-    background: #f55858;
-}
-div.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 25 0 auto;
-    top: 0;
-    padding: 0 20px 0 20px;
-    position: relative;
-    background-color: #ce7e00;
-    overflow: hidden;
-}
-input[type=text], textarea, select {
-    width: 100%;
-    padding: 12px;
-    border: 3px solid; 
-    border-color: grey;
-    border-radius: 4px;
-}
-input[type=button] {
-    width: auto;
-    float: right;
-    cursor: pointer;
-    padding: 7px;
-}
 header {
-    color: #424242;
     background: #f55858;
     padding: 80px 0;
-    text-align: center;
     }
-
     section.hero {
-        background:#ffffff;
+        background:#ce7e00;
         width: 100vw;
-        margin-bottom: 25%;
+        margin: 25%;
+        border-radius: 20%;
     }
     #hero {
-        width: 100vw;
+        width: absolute;
     }
     #logo {
         display: flex;
-        left: 90%;
         flex-direction: column;
     }
     section.logo {
         display: flex;
         flex-direction: column;
+        float: right;
     }
     h1 {
         background: linear-gradient(rgba(3, 100, 120, 0.687), rgb(5, 34, 57));
@@ -73,6 +47,25 @@ header {
         font-style: italic;
         margin: 0;
         padding: 0;
+    }
+    div.container {
+        margin: 25 0;
+        top: 0;
+        padding: 0 20px;
+        position: relative;
+    }
+    input[type=text], textarea, select {
+        width: 100%;
+        padding: 12px;
+        border: 3px solid; 
+        border-color: grey;
+        border-radius: 4px;
+    }
+    input[type=button] {
+        width: auto;
+        float: right;
+        cursor: pointer;
+        padding: 7px;
     }
     .comments {
         background: orange;
@@ -106,7 +99,6 @@ header {
         width: 150px;
     }
 }
-}
 @media screen and (max-width: 480px) {
 .btn {
 display: block;
@@ -126,11 +118,11 @@ padding: 25px 0 15px 0;
 width: 100%;
 min-width: 90vw;
 color: black;
-background: orange;
+background-color: orange;
 font-weight: bold;
 }
 .comments {
-background: #17c473;
+background-color: #17c473;
 }
 footer {
 padding: 30px 0 10px 0;
@@ -140,7 +132,6 @@ padding: 30px 0 10px 0;
 /*Laptop screens */
 
 @media screen and (max-width: 768px) {
-
 .btn {
 display: block;
 font-size: 18px;
@@ -168,15 +159,15 @@ background: #aaaaaa;
 footer {
 padding: 30px 0 10px 0;
 }           
+}
 @media screen and (min-width: 765px) {
-    header h1 {
+    header, h1 {
         font-size: 65px;
     }
 }
 /* Common desktop screen resolution */
 
 @media screen and (max-width: 1080px) {
-
 .btn {
 display: block;
 font-size: 18px;
