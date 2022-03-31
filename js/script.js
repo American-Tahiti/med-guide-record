@@ -33,12 +33,51 @@ btnSearch.addEventListener('click', () => {
 
 
 /* Reads and parses external file into my app and displays data in my app from the external (.csv) file */
+$.ajax({
+    url: '../medguide.csv',
+    dataType: 'text',
+  }).done(successFunction);
 
+/* parse */
+  function successFunction(data) {
+    var allRows = data.split(/\r?\n|\r/);
+    var table = '<table>';
+    for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+      if (singleRow === 0) {
+        table += '<thead>';
+        table += '<tr>';
+      } else {
+        table += '<tr>';
+      }
+      var rowCells = allRows[singleRow].split(',');
+      for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+        if (singleRow === 0) {
+          table += '<th>';
+          table += rowCells[rowCell];
+          table += '</th>';
+        } else {
+          table += '<td>';
+          table += rowCells[rowCell];
+          table += '</td>';
+        }
+      }
+      if (singleRow === 0) {
+        table += '</tr>';
+        table += '</thead>';
+        table += '<tbody>';
+      } else {
+        table += '</tr>';
+      }
+    } 
+    table += '</tbody>';
+    table += '</table>';
+    $('body').append(table);
+  }
  /* Code for internal file on company network 
 var urls = [\\nasv0708\specialty_macro_express\user files\Data Files\Med Guide.txt];
 */
 /* Code for .csv file saved to personal computer */
-var urls = [medguide.csv];
+var urls = [../medguide.csv];
 xhrDoc= new XMLHttpRequest();  
 
 xhrDoc.open('GET', urls[0] , async)
