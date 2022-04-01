@@ -1,5 +1,5 @@
 :root {
-    background-color: #f55858;
+    background-color: #ce7e00;
     width: 100%;
     height: 100%;
 }
@@ -15,11 +15,10 @@ body {
     /* background: #424242; */
 }
 header {
-    background: #f55858;
     padding: 80px 0;
     }
     section.hero {
-        background:#ce7e00;
+        background:#fff;
         width: 100vw;
         margin: 25%;
         border-radius: 20%;
@@ -35,7 +34,7 @@ header {
         border: none;
         border-radius: 0px 100px;
         text-align: center;
-        color: #424242;
+        color: #ffffff;
     }
     h2 {
         font-style: italic;
@@ -74,7 +73,10 @@ header {
     .suggestion {
         font-weight: bold;
         font-size: 42px;
-        position: absolute;
+        position: inherit;
+        float: initial;
+        margin: 50px;
+        padding: 0;
     }
     /* styling for HTML table */
     table {
@@ -98,23 +100,15 @@ header {
 
     footer {
         top: 85%;
-    }
-    #clock {
-        max-width: 300px;
-        margin: auto;
-        text-align: center;
-        border: grey solid 3px;
-        background-color: #ce7e00;
-        font-family: monospace;
-        font-size: 30px;
-        font-weight: bolder;
-        text-shadow: 2px 3px 5px gray;
-        box-shadow: 3px 3px 6px black;
-        margin-top: 50px;
+        background-color: #f55858;
+        width: 100vw;
     }
 #c {
-    background-color: #424242;
-    float: right;
+    text-align: center;
+}
+label {
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 /* Responsive web design */

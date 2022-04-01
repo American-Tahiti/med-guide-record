@@ -38,14 +38,13 @@
         
          <h1>Med Guide Record Workaround</h1>
             <h2>A uniformly accessible workaround for searching specialty medication instructions</h2>   
-        <hr>
         </header>
-
+<hr>
         <!-- Drug search-->
 <section class="searchEngine">  
     <div id="searchEngine">
         <form>
-<textarea placeholder="Type name of drug here"></textarea>
+<textarea placeholder="Type drug name here to search" rows="10" cols="42"></textarea>
         </form>
     </div>
 </section>
@@ -55,12 +54,17 @@
  <!-- Form with a submit button that saves input to an external file (and shows where the info is stored)-->
     
     <section class="comments">
-        <div class="container">                                    
-            <form>
-                <label for="comment" class="suggestion">Suggestion Box</label>    
+        <div>                                    
+            <form>  
+                <label for="comment" class="suggestion">Suggestion Box</label>  
+
             <textarea id="comment" name="comment" rows="10" cols="42" placeholder="Share your questions, comments or suggestions here">
     </textarea>
+    
     <button type="button" class="btn">SEND</button>
+
+  <input type="button" id="btn" value="Save data to file" onclick="saveFile()" />
+    
         </div>
     </section>
     
@@ -68,9 +72,6 @@
 
     <!-- Local time -->
     <footer>
-    <div id="clock"></div>
-        
-    <hr>
     
    <div id="c">  &copy;2022 Tahiti Castillo - All rights reserved. </div>  
  

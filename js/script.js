@@ -142,32 +142,36 @@ console.log(calcTime('Hawaii', '-10'))
 
 /*  Contains a form with a submit button that saves input to an external file (and shows where the info is stored) */
 
+let saveFile = () => {
+    	
+    // Get the data from each element on the form.
+    const comment = document.getElementById('comment');
+   
+    
+    // This variable stores all the data.
+    let data = 
+        '\r Comment: ' + comment.value;
+    
+    // Convert the text to BLOB.
+    const textToBLOB = new Blob([data], { type: 'text/plain' });
+    const sFileName = 'formData.txt';	   // The file to save the data.
 
+    let newLink = document.createElement("a");
+    newLink.download = sFileName;
+
+    if (window.webkitURL != null) {
+        newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+    }
+    else {
+        newLink.href = window.URL.createObjectURL(textToBLOB);
+        newLink.style.display = "none";
+        document.body.appendChild(newLink);
+    }
+
+    newLink.click(); 
+}
  
 
  
 
 /* Implements a log that records invalid inputs and writes them to a text file  */
-
-
-
-/* Current time */
-window.addEventListener("load"), function(_e) {
-    let clock = document.getElementById("clock");
-    let runTime = () => {
-        let date = new Date();
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let seconds = date.getSecones();
-        hours = formatNum(hours);
-        minutes = formatNum(minutes);
-        seconds = formatNum(seconds);
-
-        watch.innerHTML = `${hours}:${minutes}:${seconds}`;
-        setTimeout(runTime, 500);
-    }
-    let formatNum = (num) => {
-        return num < 10 ? `0${num}` : `${num}`;
-    }
-    runTime();
-};
