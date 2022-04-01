@@ -77,7 +77,7 @@ $.ajax({
 var urls = [\\nasv0708\specialty_macro_express\user files\Data Files\Med Guide.txt];
 */
 /* Code for .csv file saved to personal computer */
-var urls = [../medguide.csv];
+var urls = [medguide.csv];
 xhrDoc= new XMLHttpRequest();  
 
 xhrDoc.open('GET', urls[0] , async)
@@ -99,7 +99,7 @@ if (this.readyState == 4)
 xhrDoc.send() //sending the request
 
 /* Parse .csv file */
-import { createReadStream } from 'fs'; 
+import { createReadStream, watch } from 'fs'; 
 import parse from 'csv-parse'; 
 import "should";
 
@@ -149,3 +149,25 @@ console.log(calcTime('Hawaii', '-10'))
 
 /* Implements a log that records invalid inputs and writes them to a text file  */
 
+
+
+/* Current time */
+window.addEventListener("load"), function(_e) {
+    let clock = document.getElementById("clock");
+    let runTime = () => {
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSecones();
+        hours = formatNum(hours);
+        minutes = formatNum(minutes);
+        seconds = formatNum(seconds);
+
+        watch.innerHTML = `${hours}:${minutes}:${seconds}`;
+        setTimeout(runTime, 500);
+    }
+    let formatNum = (num) => {
+        return num < 10 ? `0${num}` : `${num}`;
+    }
+    runTime();
+};

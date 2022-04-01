@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset ="utf-8" http-equiv="content-type" content="text/html"> 
+        <meta charset ="utf-8"> 
+        <!--http-equiv="content-type" content="text/html"--> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' ">
         <meta name="application-name" content="Med Guide Record II">
@@ -23,10 +24,11 @@
     </head>
 <body>
     <header>
-
 <!-- Company logo -->
         <section class="logo">   
-        <img src="../images/optum-logo.png" id="logo" alt="Optum logo"> 
+            <div id="logo">
+        <img src="../images/optum-logo.png" alt="Optum logo"> 
+            </div>
         </section>
          
         <!-- Hero image -->
@@ -36,12 +38,11 @@
         
          <h1>Med Guide Record Workaround</h1>
             <h2>A uniformly accessible workaround for searching specialty medication instructions</h2>   
-        
+        <hr>
         </header>
 
         <!-- Drug search-->
 <section class="searchEngine">  
-
     <div id="searchEngine">
         <form>
 <textarea placeholder="Type name of drug here"></textarea>
@@ -49,6 +50,7 @@
     </div>
 </section>
 
+<hr>
      
  <!-- Form with a submit button that saves input to an external file (and shows where the info is stored)-->
     
@@ -62,15 +64,16 @@
         </div>
     </section>
     
-     
+     <hr>
+
     <!-- Local time -->
     <footer>
-    <section class="currentTime">
-    
+    <div id="clock"></div>
         
+    <hr>
     
-     
-    
+   <div id="c">  &copy;2022 Tahiti Castillo - All rights reserved. </div>  
+ 
     </section>
     </footer>
     

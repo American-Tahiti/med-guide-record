@@ -28,13 +28,7 @@ header {
         width: absolute;
     }
     #logo {
-        display: flex;
-        flex-direction: column;
-    }
-    section.logo {
-        display: flex;
-        flex-direction: column;
-        float: right;
+        margin: 50px 0px;
     }
     h1 {
         background: linear-gradient(rgba(3, 100, 120, 0.687), rgb(5, 34, 57));
@@ -47,10 +41,11 @@ header {
         font-style: italic;
         margin: 0;
         padding: 0;
+        text-align: center;
     }
-    div.container {
-        margin: 25 0;
-        top: 0;
+   #searchEngine {
+        margin: 50px 0px;
+        align-items: center;
         padding: 0 20px;
         position: relative;
     }
@@ -81,10 +76,46 @@ header {
         font-size: 42px;
         position: absolute;
     }
+    /* styling for HTML table */
+    table {
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #d4d4d4;
+      }
+       
+      tr:nth-child(even) {
+        background: #d4d4d4;
+      }
+       
+      th, td {
+        padding: 10px 30px;
+      }
+       
+      th {
+        border-bottom: 1px solid #d4d4d4;
+      }     
+
     footer {
         top: 85%;
     }
-
+    #clock {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        border: grey solid 3px;
+        background-color: #ce7e00;
+        font-family: monospace;
+        font-size: 30px;
+        font-weight: bolder;
+        text-shadow: 2px 3px 5px gray;
+        box-shadow: 3px 3px 6px black;
+        margin-top: 50px;
+    }
+#c {
+    background-color: #424242;
+    float: right;
+}
 
 /* Responsive web design */
 
