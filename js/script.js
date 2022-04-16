@@ -126,11 +126,11 @@ let currentDate = new Date();
 let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
 console.log(time);
 
-function calcTime(city, offset) {
+function calcTime(zone, offset) {
     var d = new Date()
     var utc = d.getTime()+(d.getTimezoneOffset() * 60000);
     var nd = new Date (utc + (3600000*offset));
-    return "The local time of the " + city + " time zone is" + nd.toLocaleString();
+    return "The local time of the " + zone + " time zone is" + nd.toLocaleString();
 }
 console.log(calcTime('eastern', '-4'))
 console.log(calcTime('central', '-5'))
@@ -170,8 +170,6 @@ let saveFile = () => {
 
     newLink.click(); 
 }
- 
-
  
 
 /* Implements a log that records invalid inputs and writes them to a text file  */
